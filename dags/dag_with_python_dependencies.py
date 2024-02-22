@@ -17,7 +17,6 @@ def get_matplotlib():
     import matplotlib
     print(f'Hi! Matplitlib with version: {matplotlib.__version__}')
 
-
 with DAG(
     default_args = default_args,
     dag_id = 'dag_with_python_dependencies_v02',
