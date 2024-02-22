@@ -11,8 +11,9 @@ Ahora, para hacer un backfill se utilizan los comandos
 
 Para ver la ID del container de apache (el scheduler) -> docker ps
 Para entrar al bash del contenedor -> docker exec -it id_del_container bash
-Para ejecutar el backfill -> airflow dags backfill -s year-month-day -e year-month-day 
+Para ejecutar el backfill -> airflow dags backfill -s year-month-day -e year-month-day dag_id
 
+Las flags -s y -e significan start y end para las fechas, se debe reemplazar con las que se desean
 
 """
 
